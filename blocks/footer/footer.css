@@ -56,3 +56,14 @@ footer .footer .columns-wrapper > div {
   background-color: var(--deep-color);
   color: var(--sand-color);
 }
+
+/* brand wordmark, matches the header logo treatment */
+footer .footer .columns-wrapper > div > div:first-child p,
+footer .footer .columns-wrapper > div > div:first-child strong {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: var(--heading-font-size-m);
+  letter-spacing: 0.4px;
+  color: var(--sand-color);
+}
