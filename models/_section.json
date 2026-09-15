@@ -65,6 +65,26 @@
             {
               "name": "Planning cards",
               "value": "planning-cards"
+            },
+            {
+              "name": "Sunset gradient",
+              "value": "sunset-gradient"
+            },
+            {
+              "name": "Slate editorial",
+              "value": "slate-editorial"
+            },
+            {
+              "name": "Framed callout",
+              "value": "framed-callout"
+            },
+            {
+              "name": "Accent split",
+              "value": "accent-split"
+            },
+            {
+              "name": "Forest fade",
+              "value": "forest-fade"
             }
           ]
         }
