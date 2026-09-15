@@ -580,6 +580,17 @@ main .section.highlight {
   color: var(--sand-color);
 }
 
+/* cards keep their own white card body, so their text must stay dark for contrast */
+.section.forest-fade .cards-card-body h1,
+.section.forest-fade .cards-card-body h2,
+.section.forest-fade .cards-card-body h3,
+.section.forest-fade .cards-card-body p,
+.section.forest-fade .cards-card-body strong {
+  color: var(--deep-color);
+  display: block;
+  text-align: left;
+}
+
 /* Tablet only (600px - 899px) */
 @media (width >= 600px) and (width < 900px) {
   .section.america-cards,

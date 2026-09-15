@@ -8,6 +8,8 @@
 }
 
 .cards > ul > li {
+  display: flex;
+  flex-direction: column;
   border-radius: 14px;
   border: 0;
   background-color: var(--background-color);
@@ -16,7 +18,31 @@
 }
 
 .cards .cards-card-body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
   margin: 16px;
+}
+
+/* clip long titles/descriptions so every card in a row matches height */
+.cards .cards-card-body h1,
+.cards .cards-card-body h2,
+.cards .cards-card-body h3 {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.cards .cards-card-body p:not(.button-wrapper) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+.cards .cards-card-body p.button-wrapper {
+  margin-top: auto;
 }
 
 .cards .cards-card-image {
