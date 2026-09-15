@@ -7,13 +7,29 @@
   position: relative;
   padding: 40px 24px;
   min-height: 300px;
+  isolation: isolate;
+}
+
+/* dims and blurs the background image so overlaid text stays legible */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background-color: rgb(10 10 10 / 40%);
+  backdrop-filter: blur(3px);
+}
+
+.hero > *:not(picture) {
+  position: relative;
+  z-index: 1;
 }
 
 /* Tag */
 .hero .hero-tag {
   display: inline-block;
   background-color: transparent;
-  color: var(--sand-color);
+  color: white;
   border: 1px solid var(--accent-color);
   padding: 4px 14px;
   border-radius: 6px;
@@ -28,11 +44,11 @@
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  color: var(--background-color);
+  color: white;
 }
 
 .hero p {
-  color: var(--sand-color);
+  color: white;
 }
 
 .hero picture {
