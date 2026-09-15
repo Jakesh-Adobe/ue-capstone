@@ -71,6 +71,10 @@
               "value": "sunset-gradient"
             },
             {
+              "name": "Alpine gradient",
+              "value": "alpine-gradient"
+            },
+            {
               "name": "Slate editorial",
               "value": "slate-editorial"
             },

@@ -22,6 +22,7 @@
   --deep-color: #14301f;
   --sand-color: #efe6d3;
   --slate-color: #3a4a41;
+  --alpine-color: #29587a;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -482,6 +483,44 @@ main .section.highlight {
   text-align: center;
 }
 
+/* cards keep their own white card body, so their text must stay dark for contrast */
+.section.sunset-gradient .cards-card-body h1,
+.section.sunset-gradient .cards-card-body h2,
+.section.sunset-gradient .cards-card-body h3,
+.section.sunset-gradient .cards-card-body p,
+.section.sunset-gradient .cards-card-body strong {
+  color: var(--deep-color);
+  display: block;
+  text-align: left;
+}
+
+/* section alpine gradient - cool diagonal callout for Europe trails */
+.section.alpine-gradient {
+  background: linear-gradient(135deg, var(--alpine-color) 0%, var(--deep-color) 100%);
+  padding: 48px 100px;
+}
+
+.section.alpine-gradient h1,
+.section.alpine-gradient h2,
+.section.alpine-gradient h3,
+.section.alpine-gradient p,
+.section.alpine-gradient strong {
+  color: white;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.section.alpine-gradient .cards-card-body h1,
+.section.alpine-gradient .cards-card-body h2,
+.section.alpine-gradient .cards-card-body h3,
+.section.alpine-gradient .cards-card-body p,
+.section.alpine-gradient .cards-card-body strong {
+  color: var(--deep-color);
+  display: block;
+  text-align: left;
+}
+
 /* section slate editorial - muted long-form reading section */
 .section.slate-editorial {
   background-color: var(--slate-color);
@@ -551,6 +590,7 @@ main .section.highlight {
   .section.baige-section,
   .section.planning,
   .section.sunset-gradient,
+  .section.alpine-gradient,
   .section.slate-editorial,
   .section.framed-callout,
   .section.accent-split,
@@ -569,6 +609,7 @@ main .section.highlight {
   .section.baige-section,
   .section.planning,
   .section.sunset-gradient,
+  .section.alpine-gradient,
   .section.slate-editorial,
   .section.framed-callout,
   .section.accent-split,
