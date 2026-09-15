@@ -136,6 +136,38 @@
           {
             "name": "Highlight",
             "value": "highlight"
+          },
+          {
+            "name": "Region intro",
+            "value": "orange-section"
+          },
+          {
+            "name": "Permits & logistics",
+            "value": "black-section"
+          },
+          {
+            "name": "Regional editors",
+            "value": "baige-section"
+          },
+          {
+            "name": "Feature circuit",
+            "value": "w-circuit"
+          },
+          {
+            "name": "Europe cards",
+            "value": "europe-cards"
+          },
+          {
+            "name": "Americas cards",
+            "value": "america-cards"
+          },
+          {
+            "name": "Planning callout",
+            "value": "planning"
+          },
+          {
+            "name": "Planning cards",
+            "value": "planning-cards"
           }
         ]
       }
@@ -150,6 +182,13 @@
         "name": "image",
         "label": "Image",
         "multi": false
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "tag",
+        "label": "Tag",
+        "value": ""
       },
       {
         "component": "richtext",
@@ -207,11 +246,53 @@
         "value": ""
       },
       {
+        "component": "text",
+        "valueType": "string",
+        "name": "tag",
+        "label": "Tag",
+        "value": ""
+      },
+      {
         "component": "richtext",
-        "name": "text",
+        "name": "textBold",
         "value": "",
-        "label": "Text",
+        "label": "TextBold",
         "valueType": "string"
+      },
+      {
+        "component": "richtext",
+        "name": "textSmall",
+        "value": "",
+        "label": "TextSmall",
+        "valueType": "string"
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonOneLable",
+        "label": "Button One Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonOneLink",
+        "label": "Button One Link",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonTwoLabel",
+        "label": "Button Two Label",
+        "value": ""
+      },
+      {
+        "component": "text",
+        "valueType": "string",
+        "name": "buttonTwoLink",
+        "label": "Button Two Link",
+        "value": ""
       }
     ]
   }

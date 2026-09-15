@@ -270,3 +270,9 @@ header nav .nav-sections ul > li > ul > li {
 header nav .nav-tools {
   grid-area: tools;
 }
+
+header .nav-wrapper .default-content-wrapper a.button {
+  background-color: var(--deep-color);
+  color: var(--sand-color);
+  box-shadow: 0 3px 8px rgb(0 0 0 / 20%);
+}

@@ -13,11 +13,15 @@
 :root {
   /* colors */
   --background-color: white;
-  --light-color: #f8f8f8;
-  --dark-color: #505050;
-  --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --light-color: #f7f4ec;
+  --dark-color: #4b4b46;
+  --text-color: #1e1e1c;
+  --link-color: #2f6b4f;
+  --link-hover-color: #1f4d38;
+  --accent-color: #d97706;
+  --deep-color: #14301f;
+  --sand-color: #efe6d3;
+  --slate-color: #3a4a41;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -179,7 +183,7 @@ button.button {
   max-width: 100%;
   margin: 0;
   border: 2px solid transparent;
-  border-radius: 2.4em;
+  border-radius: 10px;
   padding: 0.5em 1.2em;
   font: inherit;
   font-weight: 500;
@@ -199,17 +203,18 @@ button.button:disabled {
 
 a.button.primary,
 button.button.primary {
-  border-color: var(--text-color);
-  background-color: var(--text-color);
-  color: var(--background-color);
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+  color: white;
+  box-shadow: 0 4px 10px rgb(0 0 0 / 18%);
 }
 
 a.button.primary:hover,
 a.button.primary:focus-visible,
 button.button.primary:hover,
 button.button.primary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--dark-color);
+  border-color: var(--deep-color);
+  background-color: var(--deep-color);
   color: var(--light-color);
 }
 
@@ -226,18 +231,19 @@ button.button.primary:disabled:focus-visible {
 
 a.button.secondary,
 button.button.secondary {
-  border-color: var(--text-color);
+  box-shadow: none;
+  border-color: var(--deep-color);
   background-color: transparent;
-  color: var(--text-color);
+  color: var(--deep-color);
 }
 
 a.button.secondary:hover,
 a.button.secondary:focus-visible,
 button.button.secondary:hover,
 button.button.secondary:focus-visible {
-  border-color: var(--dark-color);
-  background-color: var(--light-color);
-  color: var(--dark-color);
+  border-color: var(--deep-color);
+  background-color: var(--deep-color);
+  color: var(--light-color);
 }
 
 a.button.secondary[aria-disabled="true"],
@@ -322,4 +328,165 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
+}
+
+/* section region - explore by region */
+.section.orange-section {
+  background-color: var(--accent-color);
+  padding: 32px 100px;
+  border-radius: 0;
+}
+
+.section.orange-section h1,
+.section.orange-section h2,
+.section.orange-section h3,
+.section.orange-section p,
+.section.orange-section strong {
+  color: var(--deep-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* section permits & logistics */
+.section.black-section {
+  background-color: var(--deep-color);
+  padding: 32px 100px;
+}
+
+.section.black-section h1,
+.section.black-section h2,
+.section.black-section h3,
+.section.black-section p,
+.section.black-section strong {
+  color: var(--sand-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+/* section regional editors */
+.section.baige-section {
+  background-color: var(--sand-color);
+  padding: 32px 100px;
+}
+
+.section.baige-section h1,
+.section.baige-section h2,
+.section.baige-section h3,
+.section.baige-section p,
+.section.baige-section strong {
+  color: var(--deep-color);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.section.baige-section p.button-wrapper {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.section.baige-section .default-content-wrapper {
+  text-align: center;
+}
+
+/* section w-circuit feature */
+.section.w-circuit {
+  background-color: var(--sand-color);
+  padding: 32px 100px;
+}
+
+.section.w-circuit h1,
+.section.w-circuit h2,
+.section.w-circuit h3,
+.section.w-circuit p {
+  color: var(--deep-color);
+  display: flex;
+  justify-content: left;
+}
+
+.section.w-circuit img {
+  border-radius: 16px;
+}
+
+.section.w-circuit .columns-wrapper {
+  border: none;
+}
+
+.section.w-circuit .columns-wrapper .button {
+  box-shadow: none;
+  border-color: var(--deep-color);
+  background-color: var(--deep-color);
+  color: var(--sand-color);
+}
+
+/* section europe cards */
+.section.europe-cards {
+  background-color: var(--sand-color);
+  padding: 32px 100px;
+}
+
+/* section americas cards */
+.section.america-cards {
+  padding: 32px 100px;
+}
+
+/* section planning callout */
+.section.planning {
+  background-color: var(--deep-color);
+  padding: 32px 100px;
+  border-top: 4px solid var(--accent-color);
+}
+
+.section.planning p.button-wrapper {
+  justify-content: center;
+  display: flex;
+}
+
+.section.planning p.button-wrapper .button {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--deep-color);
+}
+
+.section.planning h1,
+.section.planning h2,
+.section.planning h3,
+.section.planning p {
+  color: var(--sand-color);
+}
+
+/* section planning-by-season cards */
+.section.planning-cards .cards > ul > li {
+  background-color: var(--slate-color);
+  color: var(--sand-color);
+  justify-self: left;
+  border: 0;
+}
+
+/* Tablet only (600px - 899px) */
+@media (width >= 600px) and (width < 900px) {
+  .section.america-cards,
+  .section.orange-section,
+  .section.black-section,
+  .section.w-circuit,
+  .section.europe-cards,
+  .section.baige-section,
+  .section.planning {
+    padding: 24px 24px;
+  }
+}
+
+/* Mobile only (< 600px) */
+@media (width < 600px) {
+  .section.america-cards,
+  .section.orange-section,
+  .section.black-section,
+  .section.w-circuit,
+  .section.europe-cards,
+  .section.baige-section,
+  .section.planning {
+    padding: 16px;
+  }
 }

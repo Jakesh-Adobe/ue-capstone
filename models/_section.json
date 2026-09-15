@@ -33,6 +33,38 @@
             {
               "name": "Highlight",
               "value": "highlight"
+            },
+            {
+              "name": "Region intro",
+              "value": "orange-section"
+            },
+            {
+              "name": "Permits & logistics",
+              "value": "black-section"
+            },
+            {
+              "name": "Regional editors",
+              "value": "baige-section"
+            },
+            {
+              "name": "Feature circuit",
+              "value": "w-circuit"
+            },
+            {
+              "name": "Europe cards",
+              "value": "europe-cards"
+            },
+            {
+              "name": "Americas cards",
+              "value": "america-cards"
+            },
+            {
+              "name": "Planning callout",
+              "value": "planning"
+            },
+            {
+              "name": "Planning cards",
+              "value": "planning-cards"
             }
           ]
         }

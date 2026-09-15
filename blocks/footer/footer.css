@@ -1,5 +1,6 @@
 footer {
-  background-color: var(--light-color);
+  background-color: var(--deep-color);
+  color: var(--sand-color);
   font-size: var(--body-font-size-xs);
 }
 
@@ -13,8 +14,28 @@ footer .footer p {
   margin: 0;
 }
 
+footer a:any-link {
+  color: var(--sand-color);
+}
+
+footer a:hover {
+  color: var(--accent-color);
+}
+
 @media (width >= 900px) {
   footer .footer > div {
     padding: 40px 32px 24px;
+    text-align: center;
   }
+}
+
+.footer .columns-wrapper {
+  border-bottom: 1px solid var(--slate-color);
+  padding-bottom: 24px;
+}
+
+footer .footer .columns-wrapper > div {
+  display: grid;
+  background-color: var(--deep-color);
+  color: var(--sand-color);
 }

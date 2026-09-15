@@ -9,7 +9,8 @@
             "resourceType": "core/franklin/components/block/v1/block",
             "template": {
               "name": "Hero",
-              "model": "hero"
+              "model": "hero",
+              "filter": "hero"
             }
           }
         }
@@ -35,14 +36,63 @@
           "value": ""
         },
         {
+          "component": "text",
+          "valueType": "string",
+          "name": "tag",
+          "label": "Tag",
+          "value": ""
+        },
+        {
           "component": "richtext",
-          "name": "text",
+          "name": "textBold",
           "value": "",
-          "label": "Text",
+          "label": "TextBold",
           "valueType": "string"
+        },
+        {
+          "component": "richtext",
+          "name": "textSmall",
+          "value": "",
+          "label": "TextSmall",
+          "valueType": "string"
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "buttonOneLable",
+          "label": "Button One Label",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "buttonOneLink",
+          "label": "Button One Link",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "buttonTwoLabel",
+          "label": "Button Two Label",
+          "value": ""
+        },
+        {
+          "component": "text",
+          "valueType": "string",
+          "name": "buttonTwoLink",
+          "label": "Button Two Link",
+          "value": ""
         }
       ]
     }
   ],
-  "filters": []
+  "filters": [
+    {
+      "id": "hero",
+      "components": [
+        "button"
+      ]
+    }
+  ]
 }
