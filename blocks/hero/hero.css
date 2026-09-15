@@ -20,11 +20,6 @@
   backdrop-filter: blur(3px);
 }
 
-.hero > *:not(picture) {
-  position: relative;
-  z-index: 1;
-}
-
 /* Tag */
 .hero .hero-tag {
   display: inline-block;
@@ -38,9 +33,13 @@
   text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
 }
 
 .hero h1 {
+  position: relative;
+  z-index: 1;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
@@ -48,6 +47,8 @@
 }
 
 .hero p {
+  position: relative;
+  z-index: 1;
   color: white;
 }
 
@@ -67,6 +68,8 @@
 
 /* Button wrapper */
 .hero .hero-buttons {
+  position: relative;
+  z-index: 1;
   display: flex;
   gap: 12px;
   margin-top: 16px;
